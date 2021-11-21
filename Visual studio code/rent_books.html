@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> RENT YOUR BOOKS </title>
+    </head>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "validation.js"> </script>
+    <body>
+        <h1 class = h1> ONLINE LIBRARY MANAGEMENT SYSTEM </h1>
+        <marquee style = "color: red;"> * here you can search books , order books , rent books for small duration *</marquee>
+        <ul class="ulnav">
+            <li class="linav"><a  href="homepage.html">Home</a></li>
+            <li class="linav"><a  href="search.html">Search for books</a></li>
+            <li class="linav"><a href="add_angjs.html">Add your favourite Books</a></li>
+            <li class="linav"><a class="active" href="rent_books.html">Get your rent books</a></li>
+            <li class="linav"><a href="about.html">About us</a></li>
+            <li class="linav"><a href="admin.html">Admin login</a></li>
+            <li class="linav" style="float:right"><a href="contact.html">Contact</a></li>
+          </ul><br><br>
+
+          <form action="action_page.php" method="post" name='registration' onSubmit="formValidation();">
+            <div>
+                        <fieldset>
+                          <legend>Enter the details to take for rent</legend>
+                          <label for="book_id">ENTER THE BOOK ID : </label><br>
+                          <input  type="number" id="book_id" name="book_id" value="" required><br><br>
+
+                          <label for="name">ENTER YOUR NAME :</label><br>
+                          <input type="text" id="name" name="name" value=""><br>
+
+                          <label for="m_number">ENTER YOUR MOBILE NUMBER :</label><br>
+                          <input type="number" id="m_number" name="m_number" value=""><br>
+
+                          <label for="today">FROM :</label><br>
+                          <input type="date" id="today" name="today" value=""><br>
+
+                          <label for="deadline">TO :</label><br>
+                          <input type="date" id="deadline" name="deadline" value=""><br>
+
+                          <input type="submit" value="Submit">
+            
+                        </fieldset>
+                    </div>
+                      </form>
+          
+    </body>
+
+</html>
